@@ -273,10 +273,19 @@ export default function PitchesPage() {
                       {expandedPitchId === pitch.id && (
                         <div className="mt-4">
                           <p className="text-gray-700">Details for: {pitch.title}</p>
-                          {pitch.videoUrl && <video src={pitch.videoUrl} controls className="mt-2" 
-  /* eslint-disable-next-line jsx-a11y/media-has-caption */ 
-/>
-}
+                          {pitch.videoUrl && (
+                            <video src={pitch.videoUrl} controls className="mt-2">
+                              <track 
+                                src="captions_en.vtt" 
+                                kind="captions" 
+                                srcLang="en" 
+                                label="English captions"
+                                default
+                              />
+                              Your browser does not support the video tag.
+                            </video>
+                          )}
+
                           {pitch.attachments && pitch.attachments.length > 0 && (
                             <div className="mt-2">
                               <p className="text-gray-700">Attachments:</p>
