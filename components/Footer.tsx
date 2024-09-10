@@ -56,9 +56,18 @@ export const Footer = () => {
               <Link aria-label="Twitter" href="https://twitter.com/eaglesring" isExternal>
                 <FaTwitter size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
               </Link>
-              <Link aria-label="LinkedIn" href="https://www.linkedin.com/company/eaglesring" isExternal>
-                <FaLinkedinIn size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
-              </Link>
+              <Link
+  aria-label="LinkedIn"
+  href="https://www.linkedin.com/company/eaglesring"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaLinkedinIn
+    size={24}
+    className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors"
+  />
+</Link>
+
               <Link aria-label="Instagram" href="https://www.instagram.com/eaglesring" isExternal>
                 <FaInstagram size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
               </Link>
@@ -101,9 +110,18 @@ export const Footer = () => {
                 <Link aria-label="Twitter" href="https://twitter.com/eaglesring" isExternal>
                   <FaTwitter size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
                 </Link>
-                <Link aria-label="LinkedIn" href="https://www.linkedin.com/company/eaglesring" isExternal>
-                  <FaLinkedinIn size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
+                <Link
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/company/eaglesring"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn
+                    size={24}
+                    className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors"
+                  />
                 </Link>
+
                 <Link aria-label="Instagram" href="https://www.instagram.com/eaglesring" isExternal>
                   <FaInstagram size={24} className="hover:text-amber-400 dark:hover:text-amber-300 transition-colors" />
                 </Link>
